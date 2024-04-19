@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Order;
 use App\Models\OrderDetail;
+
 use App\Models\Product;
 use App\Notifications\SendEmailNotification;
 use Illuminate\Http\Request;
@@ -13,6 +14,7 @@ use Stripe\Checkout\Session;
 use Stripe\Customer;
 use Stripe\Stripe;
 use PDF;
+
 use Dompdf\Dompdf;
 use Dompdf\Options;
 
