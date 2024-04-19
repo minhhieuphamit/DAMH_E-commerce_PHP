@@ -34,7 +34,9 @@ class ProductController extends Controller
     public function show_product()
     {
         $data = Product::paginate(3);
+        
         $categories = Category::all();
+        
         return view('admin.product.showProduct', compact('data', 'categories'));
     }
 

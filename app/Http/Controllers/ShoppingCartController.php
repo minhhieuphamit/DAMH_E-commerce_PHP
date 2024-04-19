@@ -47,6 +47,7 @@ class ShoppingCartController extends Controller
 
         }
         session()->put('cart', $cart);
+        
         return redirect()->back()->with('success', 'Product added successfully');
     }
 
