@@ -78,6 +78,4 @@ class HomeController extends Controller
 
         return view('home.product_kid_area', compact('productsForMen', 'categories'));
     }
-
-
 }
